@@ -16,7 +16,9 @@ ReactDOM.render(
     <Provider store={store}>
         <ErrorBoundry>
             <RestoServiceContext.Provider value={restoService}>
-                <App/>
+                <Router>
+                    <App/>
+                </Router>
             </RestoServiceContext.Provider>
         </ErrorBoundry>
     </Provider>
